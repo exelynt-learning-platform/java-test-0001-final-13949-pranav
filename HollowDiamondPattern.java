@@ -3,15 +3,12 @@ public class HollowDiamondPattern {
 
         int n = 5;
 
-        // Upper part
         for (int i = 1; i <= n; i++) {
 
-            // Print spaces
             for (int j = i; j < n; j++) {
                 System.out.print(" ");
             }
 
-            // Print stars
             for (int j = 1; j <= (2 * i - 1); j++) {
                 if (j == 1 || j == (2 * i - 1))
                     System.out.print("*");
@@ -22,15 +19,12 @@ public class HollowDiamondPattern {
             System.out.println();
         }
 
-        // Lower part
         for (int i = n - 1; i >= 1; i--) {
 
-            // Print spaces
             for (int j = n; j > i; j--) {
                 System.out.print(" ");
             }
 
-            // Print stars
             for (int j = 1; j <= (2 * i - 1); j++) {
                 if (j == 1 || j == (2 * i - 1))
                     System.out.print("*");
